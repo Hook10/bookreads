@@ -1,8 +1,35 @@
 spring:
+  application.name: bookreads
   security:
     oauth2:
       client:
         registration:
           github:
-            client-id:
-            client-secret:
+            client-id: Iv1.50880c3050c866a2
+            client-secret: 3e6221b7672388c731cbcd7fa4976a85b28d4b29
+
+  data:
+   cassandra:
+    keyspace-name: main
+    username: CCHIPuCZtdZUesWkLOpLTTEd
+    password: f8gcJFfad.c0meinWD8Skc,pUM5FCY7ah,Aib48CY3phmT63mwrzlU68AGONkbHe1q4vSzmKCs7qikw30Hcio5dT7Ar9Tfiq9gvqNryDN_xTlqD6b31ulSpkv8w77Zpb
+    schema-action: create_if_not_exists
+    request:
+     timeout: 10s
+    connection:
+     connect-timeout: 10s
+     init-query-timeout: 10s
+
+
+
+datastax.astra:
+ secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: c4ae11f8-0afa-4754-90b3-45ae968e7d48-1
+  region: europe-west1
+  keyspace: main
+  application.token: AstraCS:CCHIPuCZtdZUesWkLOpLTTEd:d02aaf31fda9b8eb515402fffece7e3dff00c644235b528c1c45279f255c173b
+
+
+
